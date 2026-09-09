@@ -222,6 +222,31 @@ export const portfolioData = {
       tags: ["Figma", "UI/UX", "App Design", "Healthcare UX", "Mobile Design", "Prototyping"],
       behanceUrl: "https://www.behance.net/bilalrajput19",
       figmaUrl: "https://www.figma.com/design/Cenn0ewWdR0MTKv8jFFfjz/Medicare-Health-Login-App?node-id=0-1&t=nOWAp7YBG3uWbSmU-1"
+    },
+    {
+      id: "all-muslim-app",
+      title: "All-Muslim — Islamic Lifestyle & Prayer App",
+      category: "App Design",
+      categories: ["App Design", "UI/UX"],
+      badge: "Islamic Lifestyle UX",
+      year: "2025 – 2026",
+      shortDescription: "A modern, spiritually uplifting mobile application UI designed in Figma, featuring accurate prayer times, Quran reading experience, Qibla compass, and daily Azkar tracker.",
+      fullDescription: "All-Muslim is an intuitive and tranquil Islamic lifestyle mobile companion designed in Figma. Focused on serene aesthetics, accessible Arabic/Urdu typography, customizable prayer alerts, high-readability Quran recitation flows, and a comprehensive component-based design system.",
+      role: "Lead UI/UX & Mobile App Designer",
+      duration: "2025 – 2026",
+      deliverables: ["Figma UI/UX Design System", "High-Fidelity Wireframes", "Interactive Mobile Prototypes", "Prayer & Quran UI Flows"],
+      impact: ["Serene & Accessible Spiritual Interface", "Complete Multi-Screen Component Library", "Optimized Daily Habit & Azkar UX"],
+      accentColor: "from-emerald-600 via-teal-600 to-green-700",
+      image: null,
+      imagePlaceholder: {
+        type: "gradient",
+        title: "All-Muslim Lifestyle Experience",
+        theme: "emerald-teal",
+        icon: "Smartphone"
+      },
+      tags: ["Figma", "UI/UX", "App Design", "Islamic UX", "Mobile Design", "Prototyping"],
+      behanceUrl: "https://www.behance.net/bilalrajput19",
+      figmaUrl: "https://www.figma.com/design/Cenn0ewWdR0MTKv8jFFfjz/Medicare-Health-Login-App"
     }
   ],
 
