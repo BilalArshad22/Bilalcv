@@ -47,12 +47,12 @@ export const portfolioData = {
         name: "UI/UX & Design Tools",
         description: "Industry-standard platforms for interface design, wireframing, and visual assets.",
         skills: [
-          { name: "Figma", level: 95, icon: "Figma", popular: true },
-          { name: "Adobe XD", level: 90, icon: "Layers", popular: true },
-          { name: "FigJam (Whiteboarding)", level: 90, icon: "Palette", popular: true },
-          { name: "Adobe Illustrator", level: 85, icon: "Sparkles" },
-          { name: "Wireframing", level: 95, icon: "Layout", popular: true },
-          { name: "Interactive Prototyping", level: 92, icon: "Play", popular: true }
+          { name: "Figma", level: 80, icon: "Figma", popular: true },
+          { name: "Adobe XD", level: 68, icon: "Layers", popular: true },
+          { name: "FigJam (Whiteboarding)", level: 70, icon: "Palette", popular: true },
+          { name: "Adobe Illustrator", level: 62, icon: "Sparkles" },
+          { name: "Wireframing", level: 70, icon: "Layout", popular: true },
+          { name: "Interactive Prototyping", level: 68, icon: "Play", popular: true }
         ]
       },
       {
@@ -60,12 +60,12 @@ export const portfolioData = {
         name: "Design Methodologies",
         description: "Core UI/UX principles for crafting intuitive, accessible, and structured user journeys.",
         skills: [
-          { name: "Design Systems & Components", level: 92, icon: "Boxes", popular: true },
-          { name: "User Flows & Journey Mapping", level: 90, icon: "GitFork", popular: true },
-          { name: "Visual Hierarchy & Typography", level: 92, icon: "Layout" },
-          { name: "Responsive & Mobile-First Layouts", level: 94, icon: "Smartphone", popular: true },
-          { name: "Accessibility & WCAG Standards", level: 88, icon: "Users" },
-          { name: "Information Architecture", level: 90, icon: "Network", popular: true }
+          { name: "Design Systems & Components", level: 68, icon: "Boxes", popular: true },
+          { name: "User Flows & Journey Mapping", level: 70, icon: "GitFork", popular: true },
+          { name: "Visual Hierarchy & Typography", level: 67, icon: "Layout" },
+          { name: "Responsive & Mobile-First Layouts", level: 70, icon: "Smartphone", popular: true },
+          { name: "Accessibility & WCAG Standards", level: 63, icon: "Users" },
+          { name: "Information Architecture", level: 65, icon: "Network", popular: true }
         ]
       },
       {
@@ -73,12 +73,12 @@ export const portfolioData = {
         name: "User Research & Strategy",
         description: "Empathy-driven research methodologies to discover user pain points and validate concepts.",
         skills: [
-          { name: "User Personas & Empathy Maps", level: 90, icon: "Users", popular: true },
-          { name: "Usability Testing & Heuristics", level: 88, icon: "Zap", popular: true },
-          { name: "Low & High Fidelity Wireframes", level: 95, icon: "Layout", popular: true },
-          { name: "Problem Framing & UX Audits", level: 86, icon: "Workflow" },
-          { name: "Competitive Benchmarking", level: 88, icon: "Sparkles" },
-          { name: "User Interview Analysis", level: 85, icon: "Users" }
+          { name: "User Personas & Empathy Maps", level: 68, icon: "Users", popular: true },
+          { name: "Usability Testing & Heuristics", level: 65, icon: "Zap", popular: true },
+          { name: "Low & High Fidelity Wireframes", level: 70, icon: "Layout", popular: true },
+          { name: "Problem Framing & UX Audits", level: 62, icon: "Workflow" },
+          { name: "Competitive Benchmarking", level: 64, icon: "Sparkles" },
+          { name: "User Interview Analysis", level: 60, icon: "Users" }
         ]
       },
       {
@@ -86,12 +86,12 @@ export const portfolioData = {
         name: "Visual & Interaction Design",
         description: "Crafting captivating aesthetic details, tokens, and fluid interactive animations.",
         skills: [
-          { name: "Design Tokens & UI Variables", level: 94, icon: "Boxes", popular: true },
-          { name: "Interactive Micro-Interactions", level: 92, icon: "Play", popular: true },
-          { name: "Responsive Grid & Layout Systems", level: 92, icon: "Layout", popular: true },
-          { name: "Component-Based UI Architecture", level: 90, icon: "Layers" },
-          { name: "High-Fidelity UI Mockups", level: 95, icon: "Palette", popular: true },
-          { name: "Design Handoff & Specifications", level: 90, icon: "Workflow" }
+          { name: "Design Tokens & UI Variables", level: 68, icon: "Boxes", popular: true },
+          { name: "Interactive Micro-Interactions", level: 66, icon: "Play", popular: true },
+          { name: "Responsive Grid & Layout Systems", level: 70, icon: "Layout", popular: true },
+          { name: "Component-Based UI Architecture", level: 67, icon: "Layers" },
+          { name: "High-Fidelity UI Mockups", level: 70, icon: "Palette", popular: true },
+          { name: "Design Handoff & Specifications", level: 65, icon: "Workflow" }
         ]
       }
     ]
