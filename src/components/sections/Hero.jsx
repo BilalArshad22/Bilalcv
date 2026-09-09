@@ -1,0 +1,142 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { ArrowDown, Download, Sparkles, Layers, Code, ShieldCheck, ArrowRight } from 'lucide-react';
+import { portfolioData } from '../../data/portfolioData';
+
+export default function Hero({ onDownloadCV }) {
+  const { personal, stats } = portfolioData;
+
+  const handleScrollTo = (e, targetId) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-center justify-center pt-28 pb-16 overflow-hidden bg-grid-pattern"
+    >
+      {/* Radial ambient glow in background */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] bg-accent-500/15 dark:bg-accent-500/10 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-1/3 right-1/4 w-[400px] h-[400px] bg-violetAccent-500/10 dark:bg-violetAccent-500/10 rounded-full blur-3xl pointer-events-none -z-10" />
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center relative z-10">
+        {/* Availability Badge */}
+        <motion.div
+          initial={{ opacity: 0, y: -16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full text-xs font-semibold tracking-wide bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border border-slate-200/80 dark:border-white/10 text-slate-800 dark:text-slate-200 shadow-sm mb-8"
+        >
+          <span className="relative flex h-2.5 w-2.5">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+          </span>
+          <span>{personal.availability}</span>
+        </motion.div>
+
+        {/* Main Headline & Name */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="space-y-4"
+        >
+          <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.1]">
+            Hi, I'm{' '}
+            <span className="text-gradient">
+              {personal.name}
+            </span>
+          </h1>
+
+          {/* Subtitle / Role */}
+          <div className="text-lg sm:text-2xl md:text-3xl font-semibold text-slate-700 dark:text-slate-200 max-w-4xl mx-auto flex flex-wrap items-center justify-center gap-2 sm:gap-3 pt-2">
+            <span className="px-3 py-1 rounded-xl bg-slate-100 dark:bg-slate-800/80 border border-slate-200/60 dark:border-white/10">
+              UI/UX Designer
+            </span>
+            <span className="text-accent-500">•</span>
+            <span className="px-3 py-1 rounded-xl bg-slate-100 dark:bg-slate-800/80 border border-slate-200/60 dark:border-white/10">
+              Product & Mobile UI
+            </span>
+            <span className="text-accent-500">•</span>
+            <span className="px-3 py-1 rounded-xl bg-slate-100 dark:bg-slate-800/80 border border-slate-200/60 dark:border-white/10">
+              Design Systems & Prototypes
+            </span>
+          </div>
+
+          {/* Tagline */}
+          <p className="mt-6 text-base sm:text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
+            {personal.tagline}
+          </p>
+        </motion.div>
+
+        {/* CTA Buttons */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.25 }}
+          className="mt-10 flex flex-wrap items-center justify-center gap-4"
+        >
+          <a
+            href="#portfolio"
+            onClick={(e) => handleScrollTo(e, 'portfolio')}
+            className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full text-sm font-bold text-white bg-accent-600 hover:bg-accent-500 shadow-lg shadow-accent-500/30 hover:shadow-accent-500/50 hover:scale-105 active:scale-95 transition-all"
+          >
+            <span>View Portfolio</span>
+            <ArrowRight size={18} />
+          </a>
+
+          <button
+            onClick={onDownloadCV}
+            className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full text-sm font-bold text-slate-800 dark:text-slate-200 bg-white/80 dark:bg-slate-900/80 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-300/80 dark:border-white/15 shadow-sm hover:scale-105 active:scale-95 transition-all backdrop-blur-sm"
+          >
+            <Download size={18} className="text-accent-500" />
+            <span>Download CV</span>
+          </button>
+        </motion.div>
+
+        {/* Key Stats Bar */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.4 }}
+          className="mt-16 sm:mt-20 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mx-auto"
+        >
+          {stats.map((stat, index) => (
+            <div
+              key={index}
+              className="p-5 rounded-2xl bg-white/60 dark:bg-slate-900/60 border border-slate-200/70 dark:border-white/10 backdrop-blur-md shadow-sm hover:border-accent-500/30 transition-all hover:scale-102"
+            >
+              <div className="text-2xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                <span className="text-gradient">{stat.value}</span>
+              </div>
+              <div className="mt-1 text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-400">
+                {stat.label}
+              </div>
+            </div>
+          ))}
+        </motion.div>
+
+        {/* Scroll indicator */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.9, duration: 0.8 }}
+          className="mt-14 flex justify-center"
+        >
+          <a
+            href="#about"
+            onClick={(e) => handleScrollTo(e, 'about')}
+            aria-label="Scroll to About section"
+            className="p-2.5 rounded-full text-slate-400 hover:text-accent-500 transition-colors animate-bounce"
+          >
+            <ArrowDown size={20} />
+          </a>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
