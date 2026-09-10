@@ -171,7 +171,7 @@ export const portfolioData = {
       },
       tags: ["Figma", "UI/UX", "App Design", "Islamic UX", "Mobile Design", "Prototyping"],
       behanceUrl: "https://www.behance.net/bilalrajput19",
-      figmaUrl: "https://www.figma.com/design/Cenn0ewWdR0MTKv8jFFfjz/Medicare-Health-Login-App"
+      figmaUrl: "https://www.figma.com/design/mNYIelG8thZCA3xPWVKnK0/AL-Muslim?node-id=0-1&t=QqdoAwZA1e4xYYoT-1"
     },
     {
       id: "alpha-gym",
